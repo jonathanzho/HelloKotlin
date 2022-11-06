@@ -5,7 +5,9 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    val TAG = "HelloKotlin: MainActivity"
+    companion object {
+        const val TAG = "HelloKotlin: MainActivity"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate")
