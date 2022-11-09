@@ -29,6 +29,18 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    // MY PREBUILD TASK
+    task PreBuild {
+        println "MY PRE-BUILD TASK"
+    }
+
+    // Build tasks will be executed here.
+
+    // MY POSTBUILD TASK
+    gradle.buildFinished {
+        println "MY POST_BUILD TASK"
+    }
 }
 
 dependencies {
