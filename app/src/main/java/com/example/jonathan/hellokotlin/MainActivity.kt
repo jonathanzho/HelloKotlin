@@ -5,10 +5,6 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    companion object {
-        const val TAG = "HelloKotlin: MainActivity"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate")
 
@@ -50,5 +46,10 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "onDestroy")
 
         super.onDestroy()
+    }
+
+    companion object {
+        // No more than 23 characters long:
+        private const val TAG = "HK: MainActivity"
     }
 }
